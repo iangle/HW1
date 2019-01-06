@@ -16,6 +16,8 @@ public class StringConverter{
     	 
     	 int userNum = 0;
       try {
+         //PT -- don't use the built-in function here. There's a relatively straight-forward algorithm for this
+         //      that you should use instead. -5
     	  userNum = Integer.parseInt(userString);
       
       }catch(NumberFormatException e) {
