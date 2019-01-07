@@ -10,6 +10,8 @@ public class Date {
 	private int daysInMonth;
 	//default constructor, takes a month, day and year
 	Date(int month, int day_of_month, int year){
+		//PT -- this needs to be smarter. I shouldn't be able to say June 31 or February 30
+		//PT -- you could use your getDaysOfMonth function
 		if(month == 2 && day_of_month >= 31 || day_of_month > 31 || month > 12 || month < 1 || day_of_month < 1) {
 			
 			System.out.println("----- That is not a valid day! -----");
@@ -26,6 +28,7 @@ public class Date {
 	}
 
 	public void set_Day_of_month(int day_of_month) {
+		//PT -- all of you Set functions need to be smart, too.
 		this.day_of_month = day_of_month;
 	}
 
@@ -128,7 +131,7 @@ public class Date {
 		switch(month) {
 		case 1:
 			return 31;
-		case 2:
+		case 2: //PT -- leap year?
 			return 28;
 		case 3:
 			return 31;
