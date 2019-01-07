@@ -13,6 +13,7 @@ public class Odd_or_Even {
 		int min = 0,max = 100;
 		int userNum = 0;
 		Scanner scan = new Scanner(System.in);
+		//PT -- why 50? -2
 		while(userNum < 10 || userNum > 50) {
 			System.out.println("Enter a number between 10 and 100 ");
 			userNum = scan.nextInt();
