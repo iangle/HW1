@@ -6,6 +6,8 @@
 package employee;
 
 public class Employee {
+	//PT -- These fields are all private, which is good, but then no one who uses your Employee clas
+	//      can use the class. Make some get/set functions, at least. -5
 	private String ID = "A126790";
 	private String name = "Dan",hireDate = "12-11-15";
 	private String currentPosition = "lab tech";
